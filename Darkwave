@@ -36,8 +36,8 @@ HANDSHAKE_PATH="/root/Dark_wave/handshakes"
 PASSLOG_PATH="/root/Dark_wave/pwlog"
 WORK_DIR=`pwd`
 DEAUTHTIME="9999999999999"
-revision=136
-version=0.25
+revision=10
+version=1.0
 IP=192.168.1.1
 RANG_IP=$(echo $IP | cut -d "." -f 1,2,3)
 
@@ -67,7 +67,7 @@ general_exitmode_4="Cleaning "$grey"iptables"
 general_exitmode_5="Restoring "$grey"tput"
 general_exitmode_6="Restarting "$grey"Network-Manager"
 general_exitmode_7="Cleanup performed successfully!"
-general_exitmode_8="Thanks for using Dark_wave"
+general_exitmode_8="Thanks for using Dark wave"
 #############################################################################################
 
 # DEBUG MODE = 0 ; DEBUG MODE = 1 [Normal Mode / Developer Mode]
@@ -318,7 +318,7 @@ function top(){
 	conditional_clear
 	echo -e "$red[~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~]"
 	echo -e "$red[                                                      ]"
-  echo -e "$red[  $red    Dark_wave $version" "${yellow} ${red}  < F""${yellow}luxion" "${red}I""${yellow}s" "${red}T""${yellow}he ""${red}F""${yellow}uture >     "          ${blue}" ]"
+  echo -e "$red[  $red    Dark Wave $version" "${yellow} ${red}  < Wifi ""${yellow} Security " ${green} "Tool" " > " ${red}"   ]"
 	echo -e "$blue[                                                      ]"
 	echo -e "$blue[~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~]""$transparent"
 	echo
@@ -567,21 +567,17 @@ fi
 
 
 if [ $Dark_wave_DEBUG != 1 ]; then
-	whiptail --title "Dark_wave Disclaimer" --msgbox "Dark_wave is intended to be used for legal security purposes only, and you should only use it to protect networks/hosts you own or have permission to test. Any other use is not the responsibility of the developer(s).  Be sure that you understand and are complying with the Dark_wave licenses and laws in your area.  In other words, don't be stupid, don't be an asshole and use this tool responsibly and legally." 14 60
+	whiptail --title "Dark wave Disclaimer" --msgbox "Dark Wave is intended to be used for legal security purposes only, and you should only use it to protect networks/hosts you own or have permission to test. Any other use is not the responsibility of the developer(s).  Be sure that you understand and are complying with the Dark Wave licenses and laws in your area." 14 60
 	clear; echo ""
-		   sleep 0.01 && echo -e "$red "
-           sleep 0.01 && echo -e "          _____             _     __          __  "
-           sleep 0.01 && echo -e "          |  __ \           | |    \ \        / /             "
-           sleep 0.01 && echo -e "          | |  | | __ _ _ _| | _ _ \ \  /\  / /_ ___   _____ "
-           sleep 0.01 && echo -e "          | |  | |/ _. | .__| |/ /   \ \/  \/ / _, \ \ / / _ \ "
-           sleep 0.01 && echo -e "          | |__| | (_| | |  |     <     \  /\  / (_| |\ V /  __/   "
-           sleep 0.01 && echo -e "          |_____/ \__._|_||_|\_\     \/  \/ \__,_| \_/ \___|"
+		   sleep 0.01 && echo -e "$green "
+           sleep 0.01 && echo -e "Starting............."
+
 
 
 	echo""
 
 	sleep 0.1
-	echo -e $red"                     Dark_wave "$white""$version" (rev. "$green "$revision"$white") "$yellow"by "$white" sam0hack"
+	echo -e $red"                     Dark wave "$white""$version" (rev. "$green "$revision"$white") "$yellow"by "$white" sam0hack"
 	sleep 0.1
 	echo -e $green "           Page:"$red" https://github.com/sam0hack/Dark-Wave/Dark-Wave "$transparent
 	sleep 0.1

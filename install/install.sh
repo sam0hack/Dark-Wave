@@ -9,8 +9,8 @@ fi
 ################################
 
 #Config
-version=2
-revision=7
+version=1.0
+revision=10
 
 #Colors
 red='\e[1;31m'
@@ -41,7 +41,7 @@ fi
 
 #Check root
 if [[ $EUID -ne 0 ]]; then
-        echo -e "\e[1;31mYou don't have admin privilegies, execute the script as root."$transparent
+        echo -e "\e[1;31mYou don't have admin privileges, execute the script as root."$transparent
 				exit
 fi
 
@@ -59,9 +59,9 @@ fi
 function mostrarheader(){
 
 	conditional_clear
-	echo -e "$red[~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~]"
+echo -e "$red[~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~]"
 	echo -e "$red[                                                      ]"
-    echo -e "$red[  $red    Dark-Wave $version" "${yellow} ${red}  < D""${yellow}ark" "${red}W""${yellow}ave" " >     "          ${blue}" ]"
+  echo -e "$red[  $red    Dark Wave $version" "${yellow} ${red}  < Wifi ""${yellow} Security " ${green} "Tool" " > " ${red}"    ]"
 	echo -e "$blue[                                                      ]"
 	echo -e "$blue[~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~]""$transparent"
 	echo

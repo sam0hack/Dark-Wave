@@ -35,7 +35,7 @@ If you want to submit a feature, do so by labeling your issue as an "enhancement
 
 
 ## :octocat: Join our Slack channel
-!['Slack Channel'] (https://dark-wave.slack.com/)
+https://dark-wave.slack.com/
 
 
 ## :book: How it works
@@ -54,6 +54,6 @@ If you want to submit a feature, do so by labeling your issue as an "enhancement
 A Linux-based operating system. We recommend Kali Linux 2 or Kali 2016.1 rolling. Kali 2 & 2016 support the latest aircrack-ng versions. An external wifi card is recommended.
 
 
-## Disclaimer
+### Disclaimer
 
 ***Dark Wave is intended to be used for legal security purposes only, and you should only use it to protect networks/hosts you own or have permission to test. Any other use is not the responsibility of the developer(s).  Be sure that you understand and are complying with the Dark Wave licenses and laws in your area.***
